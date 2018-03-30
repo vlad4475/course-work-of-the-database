@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53BE4B3A-50DE-4608-AA2B-26D12F3186FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Жилманов.Курсовой_проект.Базы_данных</RootNamespace>
+    <AssemblyName>Жилманов.Курсовой_проект.Базы_данных</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddAdviser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAdviser.Designer.cs">
+      <DependentUpon>AddAdviser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddConference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddConference.Designer.cs">
+      <DependentUpon>AddConference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDepartment.Designer.cs">
+      <DependentUpon>AddDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddGraduate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddGraduate.Designer.cs">
+      <DependentUpon>AddGraduate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPanel.Designer.cs">
+      <DependentUpon>AddPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddScientificGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddScientificGroup.Designer.cs">
+      <DependentUpon>AddScientificGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSpeech.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSpeech.Designer.cs">
+      <DependentUpon>AddSpeech.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStud.Designer.cs">
+      <DependentUpon>AddStud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select.Designer.cs">
+      <DependentUpon>Select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KursovoyProektZhilmanovDataSet.cs">
+      <DependentUpon>KursovoyProektZhilmanovDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="KursovoyProektZhilmanovDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KursovoyProektZhilmanovDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AddPublication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPublication.Designer.cs">
+      <DependentUpon>AddPublication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateDelete.Designer.cs">
+      <DependentUpon>UpdateDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Аспиранты по годам обучения.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Аспиранты по годам обучения.Designer.cs">
+      <DependentUpon>Аспиранты по годам обучения.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Аспиранты по научным руководителям.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Аспиранты по научным руководителям.Designer.cs">
+      <DependentUpon>Аспиранты по научным руководителям.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Запросы.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Запросы.Designer.cs">
+      <DependentUpon>Запросы.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Список учасников конференций .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Список учасников конференций .Designer.cs">
+      <DependentUpon>Список учасников конференций .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Учёт публикаций преподавателей.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Учёт публикаций преподавателей.Designer.cs">
+      <DependentUpon>Учёт публикаций преподавателей.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Учёт публикаций студентов.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Учёт публикаций студентов.Designer.cs">
+      <DependentUpon>Учёт публикаций студентов.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddAdviser.resx">
+      <DependentUpon>AddAdviser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddConference.resx">
+      <DependentUpon>AddConference.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDepartment.resx">
+      <DependentUpon>AddDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddGraduate.resx">
+      <DependentUpon>AddGraduate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPanel.resx">
+      <DependentUpon>AddPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddScientificGroup.resx">
+      <DependentUpon>AddScientificGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSpeech.resx">
+      <DependentUpon>AddSpeech.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStud.resx">
+      <DependentUpon>AddStud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select.resx">
+      <DependentUpon>Select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddPublication.resx">
+      <DependentUpon>AddPublication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDelete.resx">
+      <DependentUpon>UpdateDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Аспиранты по годам обучения.resx">
+      <DependentUpon>Аспиранты по годам обучения.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Аспиранты по научным руководителям.resx">
+      <DependentUpon>Аспиранты по научным руководителям.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Запросы.resx">
+      <DependentUpon>Запросы.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Список учасников конференций .resx">
+      <DependentUpon>Список учасников конференций .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Учёт публикаций преподавателей.resx">
+      <DependentUpon>Учёт публикаций преподавателей.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Учёт публикаций студентов.resx">
+      <DependentUpon>Учёт публикаций студентов.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="KursovoyProektZhilmanovDataSet.xsc">
+      <DependentUpon>KursovoyProektZhilmanovDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KursovoyProektZhilmanovDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KursovoyProektZhilmanovDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KursovoyProektZhilmanovDataSet.xss">
+      <DependentUpon>KursovoyProektZhilmanovDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
